@@ -1,95 +1,110 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+// import Image from "next/image";
+import { Roboto } from 'next/font/google';
+
+const roboto = Roboto({
+  subsets: ['latin'],
+  weight: ['400', '700'], // Podés ajustar según lo que uses
+  display: 'swap',
+});
+
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
 
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+     <main className={roboto.className}>
+      <div id="carouselExample" className="carousel slide">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img
+              src="/Imagenes/Inicio/inicio1.jpg"
+              className="d-block w-100"
+              alt="Imagen 1"
             />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+          </div>
+          <div className="carousel-item">
+            <img
+              src="/Imagenes/Inicio/inicio2.jpg"
+              className="d-block w-100"
+              alt="Imagen 2"
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              src="/Imagenes/Inicio/inicio3.jpg"
+              className="d-block w-100"
+              alt="Imagen 3"
+            />
+          </div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <div className="contenedor1">
+        <h2>BIENVENIDOS</h2>
+        <p>
+          En pleno Valle de El Bolsón, rodeados de bosque y montañas, Cabañas Arrayanes les da una cálida bienvenida. Contamos con 4 cabañas, para 4 y 6 personas. Construidas con piedra y madera, con increíbles vistas, piscina climatizada y hogar a leña. ¡Los esperamos en cualquier época del año!
+        </p>
+      </div>
+
+      <div className="contenedor2">
+        <div className="item_inicio">
+          <h5>Naturaleza</h5>
+          <img src="/Imagenes/Inicio/somosnaturaleza.jpg" alt="somos naturaleza" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, amet consequatur. Reprehenderit temporibus alias culpa iusto quod aperiam. Dicta ipsum debitis.
+          </p>
+        </div>
+
+        <div className="item_inicio">
+          <h5>Interior</h5>
+          <img src="/Imagenes/Inicio/interiorjpg.jpg" alt="interior acogedor" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, amet consequatur. Reprehenderit temporibus alias culpa iusto quod aperiam. Dicta ipsum debitis.
+          </p>
+        </div>
+
+        <div className="item_inicio">
+          <h5>Piscina</h5>
+          <img src="/Imagenes/Inicio/piscina.jpg" alt="piscina climatizada" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, amet consequatur. Reprehenderit temporibus alias culpa iusto quod aperiam. Dicta ipsum debitis.
+          </p>
+        </div>
+
+        <div className="item_inicio">
+          <h5>Descanso</h5>
+          <img src="/Imagenes/Inicio/descanso.jpg" alt="zona de descanso" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla, amet consequatur. Reprehenderit temporibus alias culpa iusto quod aperiam. Dicta ipsum debitis.
+          </p>
+        </div>
+      </div>
+    </main>
   );
 }
+
+   
+
+  
+
+
