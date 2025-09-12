@@ -1,3 +1,5 @@
+import "@/styles/contacto.css";
+
 import ContactForm from "@/components/ContactForm";
 
 export const metadata = {
@@ -12,35 +14,35 @@ export default function Contacto() {
         <h2>Contacto</h2>
 
         <ContactForm />
+      </div>
 
+      <div className="datos">
+        <h2>Otras vías de contacto</h2>
+        <br />
+        <p>Si prefieres, puedes contactarnos a través de los siguientes medios:</p>
+        <ul>
+          <li>Whatsapp: +54 38722222</li>
+          <li>Email: contacto@cabañasarrayanes.com.ar</li>
+          <li>Dirección: Subida de Marquez, El Bolsón, Pcia de Río Negro, Argentina</li>
+        </ul>
+        <br /><br /><br />
 
-        <div className="datos">
-          <h2>Otras vías de contacto</h2>
-          <br />
-          <p>Si prefieres, puedes contactarnos a través de los siguientes medios:</p>
-          <ul>
-            <li>Whatsapp: +54 38722222</li>
-            <li>Email: contacto@cabañasarrayanes.com.ar</li>
-            <li>Dirección: Subida de Marquez, El Bolsón, Pcia de Río Negro, Argentina</li>
-          </ul>
-          <br /><br /><br />
-
-          <div className="redes">
-            <h2>Nuestras Redes</h2>
-            <div className="redes_iconos">
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-facebook"></i>
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fa-regular fa-envelope"></i>
-              </a>
-            </div>
+        <div className="redes">
+          <h2>Nuestras Redes</h2>
+          <div className="redes_iconos">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-facebook"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <i className="fa-regular fa-envelope"></i>
+            </a>
           </div>
         </div>
       </div>
+
     </main>
   );
 }

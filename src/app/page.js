@@ -1,4 +1,5 @@
 // import Image from "next/image";
+import "../styles/home.css";
 import { Roboto } from 'next/font/google';
 
 const roboto = Roboto({

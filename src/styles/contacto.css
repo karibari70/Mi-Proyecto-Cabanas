@@ -1,0 +1,181 @@
+body {
+
+    background-image: url('https://i.pinimg.com/1200x/f4/7e/bb/f47ebb3517a619fcef4e0e4e2d997827.jpg');
+    background-repeat: repeat;
+    background-color: #eae7e2;
+    color: #3e3e3e;
+}
+
+/* Contenedor principal */
+.contacto {
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 40px;
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #faf1e4;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Gill Sans', 'Segoe UI', sans-serif;
+}
+
+/* Columna del formulario */
+.form-container {
+    flex: 1 1 60%;
+}
+
+/* Columna de datos */
+.datos {
+    flex: 1 1 35%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    color: #333;
+}
+
+/* Títulos */
+.form-container h2,
+.datos h2 {
+    margin-bottom: 20px;
+    color: #334421;
+    font-family: 'Bungee', sans-serif;
+    font-size: 1.4em;
+}
+
+/* Formulario */
+.formulario p {
+    margin-bottom: 20px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #334421;
+}
+
+.formulario input[type="text"],
+.formulario textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    border-color: #334421;
+    outline: none;
+}
+
+.formulario textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.formulario button[type="submit"] {
+    display: block;
+    width: 30%;
+    padding: 14px;
+    background-color: #334421;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+.formulario button:hover {
+    background-color: #dae6cd;
+    color: #000;
+}
+
+/* Lista de datos */
+.datos p {
+    font-family: "Roboto";
+    font-style: italic;
+    color: #334421;
+    font-weight: bold;
+}
+
+.datos p {
+    font-family: "Roboto";
+    font-style: italic;
+    color: #334421;
+    font-weight: bold;
+}
+
+.datos ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.datos li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: bold;
+    color: #334421;
+} 
+
+ /* .datos li::before { 
+     content: "📌"; 
+     position: absolute;
+    left: 0; 
+}  */
+
+.redes {
+    flex: 1 1 100%;
+    background-color: #e0c0c0;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #ddd;
+    color: #333;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
+
+}
+
+.redes h2 {
+    margin-bottom: 20px;
+    color: #334421;
+    font-family: 'Bungee', sans-serif;
+    font-size: 1.4em;
+}
+
+
+.redes_iconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10%;
+}
+
+.redes a {
+    color: #334421;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.redes a:hover {
+    color: #000;
+    transform: scale(1.4);
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contacto {
+        flex-direction: column;
+    }
+}
+

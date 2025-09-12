@@ -1,3 +1,5 @@
+import "@/styles/promociones.css";
+
 import NovedadItem from "@/components/NovedadItem";
 
 export const metadata = {
@@ -9,12 +11,13 @@ export default function Promociones() {
     return (
         <section className="contenedor_promociones">
             <h2>Promociones</h2>
-            <NovedadItem title="Este es el titulo de la promoción" subtitle="Subtitulo de la promoción" imagen="https://dummyimage.com/600x400/fff/aaa" body="Este es el cuerpo de la promocion.Este es el cuerpo de la promocion.Este es el cuerpo de la promocion" />
-            <NovedadItem title="Este es el titulo de la promoción" subtitle="Subtitulo de la promoción" imagen="https://dummyimage.com/600x400/fff/aaa" body="Este es el cuerpo de la promocion.Este es el cuerpo de la promocion.Este es el cuerpo de la promocion" />
-            <NovedadItem title="Este es el titulo de la promoción" subtitle="Subtitulo de la promoción" imagen="https://dummyimage.com/600x400/fff/aaa" body="Este es el cuerpo de la promocion.Este es el cuerpo de la promocion.Este es el cuerpo de la promocion" />
-            <NovedadItem title="Este es el titulo de la promoción" subtitle="Subtitulo de la promoción" imagen="https://dummyimage.com/600x400/fff/aaa" body="Este es el cuerpo de la promocion.Este es el cuerpo de la promocion.Este es el cuerpo de la promocion" />
+            <div className="promociones_grid">
+                <NovedadItem title="Este es el titulo de la promoción" subtitle="Subtitulo de la promoción" imagen="https://dummyimage.com/300x200/fff/aaa" body="Este es el cuerpo de la promocion.Este es el cuerpo de la promocion.Este es el cuerpo de la promocion" />
+                <NovedadItem title="Este es el titulo de la promoción" subtitle="Subtitulo de la promoción" imagen="https://dummyimage.com/300x200/fff/aaa" body="Este es el cuerpo de la promocion.Este es el cuerpo de la promocion.Este es el cuerpo de la promocion" />
+                <NovedadItem title="Este es el titulo de la promoción" subtitle="Subtitulo de la promoción" imagen="https://dummyimage.com/300x200/fff/aaa" body="Este es el cuerpo de la promocion.Este es el cuerpo de la promocion.Este es el cuerpo de la promocion" />
+                <NovedadItem title="Este es el titulo de la promoción" subtitle="Subtitulo de la promoción" imagen="https://dummyimage.com/300x200/fff/aaa" body="Este es el cuerpo de la promocion.Este es el cuerpo de la promocion.Este es el cuerpo de la promocion" />
 
-
+            </div>
         </section>
     )
 }

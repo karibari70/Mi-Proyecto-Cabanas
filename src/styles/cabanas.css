@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  background: #f1efef url("/Imagenes/white_texture.jpg") repeat top left;
+}
+
+.cabanas_montana {
+  position: relative;
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.cabanas_montana img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.mask h2,
+.mask h3,
+.mask p {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  color: #FDCF8B;
+}
+
+.mask h2,
+.mask p {
+  font-family: "Aclonica", sans-serif;
+}
+
+.cabanas_montana:hover .mask {
+  opacity: 1;
+}
+
+.cabanas_montana:hover .mask h2,
+.cabanas_montana:hover .mask h3,
+.cabanas_montana:hover .mask p {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+@media (max-width: 600px) {
+  .mask {
+    padding: 5px;
+  }
+
+  .mask h2 {
+    font-size: 1.2rem;
+  }
+
+  .mask h3 {
+    font-size: 80%;
+  }
+
+  .mask p {
+    font-size: 1rem;
+  }
+}
+
+/* contenedores */
+.contenedor2_cabanas,
+.contenedor3_cabanas {
+  padding: 10%;
+}
+
+@media (min-width: 800px) {
+  .contenedor2_cabanas {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    gap: 5%;
+  }
+
+  #carouselExampleFade .carousel-item img {
+    /* width: 600px !important; */
+    border-radius: 10px;
+  }
+
+  .contenedor3_cabanas {
+    display: flex;
+    justify-content: space-between;
+    padding: 5%;
+    gap: 5%;
+  }
+
+  #carouselExample .carousel-item img {
+    /* width: 600px !important; */
+    border-radius: 10px;
+  }
+}
