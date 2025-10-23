@@ -1,0 +1,239 @@
+/* font-family: "Aclonica", sans-serif;  */
+
+
+
+/* header-navbar */
+.navbar-container {
+    font-family: "Bungee";
+    font-weight: 300;
+    background-color: #334421;
+}
+
+/* .navbar-container .logo {
+    width: 7%;
+} */
+
+.navbar-container h2 {
+    color: #FDCF8B;
+    font-family: "Aclonica", sans-serif;
+    font-size: 2em;
+}
+
+.navbar-container .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+  
+}
+
+.navbar-container .hamburger {
+    display: none;
+}
+
+.navbar-container .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: #fff;
+}
+
+.navbar-container .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:1rem;
+    margin: 0;
+    padding:0 ;
+}
+
+.navbar-container .nav-item {
+    margin-left: 1rem;
+    list-style: none;
+}
+
+.navbar-container .nav-link {
+    font-size: 2.5vh;
+    color: #FDCF8B;
+}
+
+.navbar-container .nav-link:hover {
+    color: #e0ebdd;
+}
+
+.nav-item a {
+    text-decoration: none;
+}
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 60px; /* ajustá según tu diseño */
+}
+
+.site-title {
+  font-size: 2em;
+  color: #FDCF8B;
+  font-family: "Aclonica", sans-serif;
+}
+@media only screen and (min-width: 769px) {
+  .navbar-container .hamburger {
+    display: none;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar-container .logo {
+        width: 25%;
+    }
+
+    .navbar-container h2 {
+        color: #FDCF8B;
+        font-family: "Aclonica", sans-serif;
+        font-size: 1.3em;
+    }
+
+    .navbar-container .navbar {
+        padding: 5%;
+    }
+
+    .navbar-container .nav-menu {
+        position: fixed;
+        left: -110%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #111111;
+        width: 90%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+        z-index: 1;
+    }
+
+    .navbar-container .nav-menu.active {
+        left: 0;
+        z-index: 1;
+    }
+
+    .navbar-container .nav-item {
+        margin: 2.5rem 0;
+        list-style: none;
+    }
+
+    .navbar-container .hamburger {
+        display: block;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .navbar-container .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar-container .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .navbar-container .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+
+/* footer */
+
+.footer {
+    background-color:#F7F4F1 ;
+    padding-bottom: 20px;
+    padding-top: 3%;
+    text-align: center;
+}
+
+.footer h4 {
+
+    font-size: larger;
+    color: rgb(14, 13, 13);
+    text-align: center;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.footer div.social-link {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 2%;
+}
+
+.social-link a {
+    color: rgb(12, 12, 12);
+    font-size: 30px;
+    transition: transform 0.3s ease;
+    /* Suaviza el efecto */
+}
+
+.social-link a:hover {
+    transform: scale(1.4);
+
+}
+
+
+.footer p {
+    text-align: center;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        background-color: rgb(193, 204, 204);
+        padding-bottom: 20px;
+        padding-top: 3%;
+        text-align: center;
+    }
+
+    .footer h4 {
+
+        font-size: larger;
+        color: rgb(22, 22, 22);
+        text-align: center;
+        font-family: "Roboto";
+        font-style: italic;
+        font-weight: bolder;
+        margin-top: 5px;
+    }
+
+    .social-link a {
+        color: rgb(12, 12, 12);
+        font-size: 30px;
+        transition: transform 0.3s ease;
+    }
+
+    .social-link a:hover {
+        transform: scale(1.4);
+        /* Agranda el ícono al 120% */
+    }
+
+    .footer div.social-link {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 6%;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+
+    .logo_footer img {
+        width: 20%;
+    }
+}
