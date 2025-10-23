@@ -1,0 +1,145 @@
+.navbar-container {
+    font-family: "Bungee", display;
+    font-weight: 300;
+    background-color: #334421;
+}
+
+.navbar-container .logo {
+    width: 10%;
+}
+
+.navbar-container h2 {
+    color: #FDCF8B;
+    font-family: "Aclonica", sans-serif;
+    font-size: 2em;
+}
+
+.navbar-container .navbar {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    padding: 1%;
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-container .logo {
+        width: 25%;
+    }
+
+    .navbar-container h2 {
+        color: #FDCF8B;
+        font-family: "Aclonica", sans-serif;
+        font-size: 1.3em;
+    }
+
+    .navbar-container .navbar {
+        padding: 5%;
+    }
+  }
+
+  /* * footer */ */
+
+
+
+.footer {
+    background-color: rgb(193, 204, 204);
+    padding-bottom: 20px;
+    padding-top: 3%;
+    text-align: center;}
+/* Footer */
+footer{
+ position:relative;
+ top:62px;
+ padding-top:47px;
+  background-color:#b6aa8f;
+}
+
+
+
+.footer h4 {
+
+    font-size: larger;
+    color: rgb(14, 13, 13);
+    text-align: center;
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.footer div.social-link {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 3%;
+}
+
+.social-link a {
+    color: rgb(12, 12, 12);
+    font-size: 30px;
+    transition: transform 0.3s ease;
+    /* Suaviza el efecto */
+}
+
+.social-link a:hover {
+    transform: scale(1.4);
+
+}
+
+
+.footer p {
+    text-align: center;
+}
+
+.logo_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* opcional, para dar espacio */
+}
+
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        background-color: rgb(193, 204, 204);
+        padding-bottom: 20px;
+        padding-top: 3%;
+        text-align: center;
+    }
+
+    .footer h4 {
+
+        font-size: larger;
+        color: rgb(22, 22, 22);
+        text-align: center;
+        font-family: "Roboto";
+        font-style: italic;
+        font-weight: bolder;
+        margin-top: 5px;
+    }
+
+    .social-link a {
+        color: rgb(12, 12, 12);
+        font-size: 30px;
+        transition: transform 0.3s ease;
+    }
+
+    .social-link a:hover {
+        transform: scale(1.4);
+        /* Agranda el ícono al 120% */
+    }
+
+    .footer div.social-link {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 6%;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+
+    .logo_footer img {
+        width: 20%;
+    }
+}
