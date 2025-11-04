@@ -45,6 +45,33 @@ INSERT INTO `empleados` VALUES (1,'Juan','Hagan','Programador Senior',32,120000,
 UNLOCK TABLES;
 
 --
+-- Table structure for table `promociones`
+--
+
+DROP TABLE IF EXISTS `promociones`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `promociones` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `titulo` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `subtitulo` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  `imagen_url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `cuerpo` text COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `promociones`
+--
+
+LOCK TABLES `promociones` WRITE;
+/*!40000 ALTER TABLE `promociones` DISABLE KEYS */;
+INSERT INTO `promociones` VALUES (1,'Promo Octubre','Aprovchá el descuento del 20% fin de largo','https://hojaverdemonteverde.com/images/slider-01.jpg','Se acerca el fin de largo de Octubre 2025! Cabañas Arrayanes te ofrece esta promo única 20% de descuento por 3 noches de estadia. No te lo podés perder..'),(2,'Promo Diciembre','Aprovechá el descuento del 20% fin de largo','https://cf.bstatic.com/xdata/images/hotel/max1024x768/630148491.jpg?k=16ccdb648a58347b9a1b52014a7df9ff35d710ff11a5870be6d2ae5dbdf04265&o=&hp=1','Se acerca el fin de largo de Diciembre 2025! Cabañas Arrayanes te ofrece esta promo única 20% de descuento por 3 noches de estadia. No te lo podés perder..'),(3,'Modifico prueba 1','Modifico prueba1','prueba 1','prueba 1');
+/*!40000 ALTER TABLE `promociones` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
 -- Table structure for table `usuarios`
 --
 
@@ -82,4 +109,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-10-22 20:41:01
+-- Dump completed on 2025-11-04 17:39:06
