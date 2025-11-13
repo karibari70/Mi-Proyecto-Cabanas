@@ -8,6 +8,7 @@ export const metadata = {
 };
 
 export default async function Promociones() {
+     
     const data = await fetch(`${process.env.NEXT_APP_API_URL}/api/novedades`);   
     const novedades = await data.json();
 
