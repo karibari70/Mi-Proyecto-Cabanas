@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 var novedadesModel = require('./../models/novedadesModel');
 var cloudinary = require('cloudinary').v2;
+var nodemailer = require('nodemailer');
 
 router.get('/novedades', async function (req, res, next) {
     let novedades = await novedadesModel.getNovedades();
@@ -10,7 +11,7 @@ router.get('/novedades', async function (req, res, next) {
         if (novedades.imagen_url) {
             const imagen = cloudinary.url(novedades.imagen_url, {
                 width: 960,
-                height: 200,
+                height: 550,
                 crop: 'fill'
             });
             return {
@@ -26,6 +27,28 @@ router.get('/novedades', async function (req, res, next) {
     });
 
     res.json(novedades);
+});
+
+router.post('/contacto', async (req, res) => {
+    const mail = {
+        to: 'coihues27@gmail.com',
+        subject: 'Contacto desde la web',
+        html: `${req.body.nombre} ${req.body.apellido} se contacto a traves de la web y quiere más información a este correo: ${req.body.email} <br> Además, hizo la siguiente consulta: ${req.body.consulta}`
+    }
+
+    const transport = nodemailer.createTransport({
+        host: process.env.SMTP_HOST,
+        port: process.env.SMTP_PORT,
+        auth: {
+            user: process.env.SMTP_USER,
+            pass: process.env.SMTP_PASS
+        }
+    });
+    await transport.sendMail(mail)
+    res.status(201).json({
+        error: false,
+        message: 'Mensaje enviado'
+    });
 });
 
 module.exports = router;

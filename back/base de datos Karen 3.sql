@@ -58,7 +58,7 @@ CREATE TABLE `promociones` (
   `imagen_url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `cuerpo` text COLLATE utf8mb4_unicode_ci NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -67,7 +67,7 @@ CREATE TABLE `promociones` (
 
 LOCK TABLES `promociones` WRITE;
 /*!40000 ALTER TABLE `promociones` DISABLE KEYS */;
-INSERT INTO `promociones` VALUES (1,'Promo Octubre','Aprovchá el descuento del 20% fin de largo','https://hojaverdemonteverde.com/images/slider-01.jpg','Se acerca el fin de largo de Octubre 2025! Cabañas Arrayanes te ofrece esta promo única 20% de descuento por 3 noches de estadia. No te lo podés perder..'),(2,'Promo Diciembre','Aprovechá el descuento del 20% fin de largo','jkukipl6c3eiaqdyqjrf','Se acerca el fin de largo de Diciembre 2025! Cabañas Arrayanes te ofrece esta promo única 20% de descuento por 3 noches de estadia. No te lo podés perder..'),(6,'24','24','nvxdr2cmewwz2uzwtzza','24'),(7,'promo 4','promo 4','lmfxoec4qmezw7ranfjz','promo 4');
+INSERT INTO `promociones` VALUES (1,'Promo Octubre','Aprovchá el descuento del 20% fin de largo','p2bwytvdb3fvnxjvuox4','Se acerca el fin de largo de Octubre 2025! Cabañas Arrayanes te ofrece esta promo única 20% de descuento por 3 noches de estadia. No te lo podés perder..'),(2,'Promo Diciembre','Aprovechá el descuento del 20% fin de largo','jkukipl6c3eiaqdyqjrf','Se acerca el fin de largo de Diciembre 2025! Cabañas Arrayanes te ofrece esta promo única 20% de descuento por 3 noches de estadia. No te lo podés perder..'),(6,'promo Noviembre','Venite el fin de largo , tenemos una excelente promoción','p2bwytvdb3fvnxjvuox4','En El Bolsón, Comarca Andina, tendremos una semana de actividades de montaña, canopy, trekking, imperdibles!!'),(7,'promo 4','promo 4','lmfxoec4qmezw7ranfjz','promo 4');
 /*!40000 ALTER TABLE `promociones` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -109,4 +109,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-11-12 13:04:18
+-- Dump completed on 2025-11-18 17:24:56

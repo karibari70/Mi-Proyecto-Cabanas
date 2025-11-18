@@ -13,7 +13,7 @@ export default function Contacto() {
       <div className="form-container">
         <h2>Contacto</h2>
 
-        <ContactForm />
+        <ContactForm postUrl={`${process.env.NEXT_APP_API_URL}/api/contacto`} />
       </div>
 
       <div className="datos">
