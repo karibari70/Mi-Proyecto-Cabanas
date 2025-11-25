@@ -51,17 +51,17 @@ export default function ContactForm({postUrl}) {
       <form action="/contacto" method="post" onSubmit={handleSubmit} className="formulario">
         <p>
           <label htmlFor="nombre">Nombre</label>
-          <input type="text" name="nombre" id="nombre" value={formData.nombre} onChange={handleChange} />
+          <input type="text" name="nombre" className="form-control" id="nombre" value={formData.nombre} onChange={handleChange} />
         </p>
 
         <p>
           <label htmlFor="apellido">Apellido</label>
-          <input type="text" name="apellido" id="apellido" value={formData.apellido} onChange={handleChange} />
+          <input type="text" name="apellido" className="form-control" id="apellido" value={formData.apellido} onChange={handleChange} />
         </p>
 
         <p>
           <label htmlFor="email">Email</label>
-          <input type="email" name="email" id="email" value={formData.email} onChange={handleChange} />
+          <input type="email" name="email" className="form-control" id="email" value={formData.email} onChange={handleChange} />
         </p>
 
         <p>
